@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spiritBlue"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioBtnGrp"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/simpleintrest"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="19sp"
+            app:buttonTint="@color/royalTeal"
+            android:text="Simple Intrest" />
+
+        <RadioButton
+            android:id="@+id/compoundintrest"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:textSize="19sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginRight="85dp"
+            app:buttonTint="@color/royalTeal"
+            android:text="Compound Intrest"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/principalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="serif"
+        android:gravity="center"
+        app:cornerRadius="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Principal Amount"
+        android:textColor="@color/oceanTeal"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/intrestRate"
+        android:background="@drawable/edittext_border"
+        android:hint="Intrest Rate"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/oceanTeal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <EditText
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:fontFamily="serif"
+        android:id="@+id/timePeriod"
+        android:background="@drawable/edittext_border"
+        android:inputType="numberDecimal"
+        android:hint="Time Period"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="45dp"
+        app:cornerRadius="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/oceanTeal"
+            />
+
+       <ImageButton
+           android:layout_width="45dp"
+           android:id="@+id/specialbtn"
+           android:layout_height="45dp"
+           android:src="@drawable/outline_add_alert_24"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="8dp"
+           android:backgroundTint="@android:color/transparent"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Submit"
+            android:textSize="22dp"
+            android:backgroundTint="@color/royalTeal"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="x"
+            android:textSize="26dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="155dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Total :"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/notosanskr_extrabold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/tiber"
+        android:textSize="32dp" />
+
+
+</LinearLayout>

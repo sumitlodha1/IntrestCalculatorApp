@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="spiritBlue">#D2E8E3</color>
+    <color name="peach">#FFCB9A</color>
+    <color name="caramelKiss">#D8B08C</color>
+    <color name="royalTeal">#0F6466</color>
+    <color name="carbon">#2C3532</color>
+    <color name="oceanTeal">#144B5C</color>
+    <color name="authenticTeal">#025159</color>
+    <color name="tiber">#012E40</color>
+
+</resources>
