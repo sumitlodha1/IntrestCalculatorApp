@@ -97,11 +97,12 @@
             />
 
        <ImageButton
-           android:layout_width="45dp"
+           android:layout_width="50dp"
            android:id="@+id/specialbtn"
-           android:layout_height="45dp"
-           android:src="@drawable/outline_add_alert_24"
-           android:layout_marginTop="40dp"
+           android:layout_height="50dp"
+           android:visibility="invisible"
+           android:src="@drawable/info_icon"
+           android:layout_marginTop="37dp"
            android:layout_marginLeft="8dp"
            android:backgroundTint="@android:color/transparent"
            />
