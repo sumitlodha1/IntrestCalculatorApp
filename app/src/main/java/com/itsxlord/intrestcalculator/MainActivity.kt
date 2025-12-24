@@ -56,8 +56,6 @@ class MainActivity : AppCompatActivity() {
         val btnClear = findViewById<Button>(R.id.btnclear)
         val btnRadioGrp = findViewById<RadioGroup>(R.id.radioBtnGrp)
 
-        val specialcase = findViewById<ImageButton>(R.id.specialbtn)
-
         btnSubmit.setOnClickListener {
 
             closeKeyboard()
