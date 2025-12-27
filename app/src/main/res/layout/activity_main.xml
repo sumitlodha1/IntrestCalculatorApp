@@ -73,23 +73,35 @@
         app:cornerRadius="10dp"
         android:textColor="@color/oceanTeal"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:fontFamily="serif"
+            android:id="@+id/timePeriod"
+            android:background="@drawable/edittext_border"
+            android:inputType="numberDecimal"
+            android:hint="Time Period"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="45dp"
+            app:cornerRadius="10dp"
+            android:layout_marginLeft="75dp"
+            android:textColor="@color/oceanTeal"
+            />
 
-    <EditText
-        android:layout_width="260dp"
-        android:layout_height="35dp"
-        android:fontFamily="serif"
-        android:id="@+id/timePeriod"
-        android:background="@drawable/edittext_border"
-        android:inputType="numberDecimal"
-        android:hint="Time Period"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_marginTop="45dp"
-        app:cornerRadius="10dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginRight="5dp"
-        android:textColor="@color/oceanTeal"
-        />
+        <Switch
+            android:id="@+id/btnSpecialCase"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="41dp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -109,14 +121,15 @@
             android:textSize="22sp"
             app:cornerRadius="14dp" />
 
-        <Button
+
+        <ImageButton
             android:id="@+id/btnclear"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="45dp"
             android:layout_marginRight="10dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:text="x"
+            android:src="@drawable/cross_small"
             android:textSize="26dp"
             android:background="@android:color/transparent"
             android:textColor="@color/black"
