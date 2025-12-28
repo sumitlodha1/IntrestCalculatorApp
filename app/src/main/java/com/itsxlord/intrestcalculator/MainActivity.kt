@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
 
         btnSpecialCase.setOnCheckedChangeListener {_, isChecked ->
             if (isChecked){
-                Toast.makeText(this, "Monthly Intrest and yearly Compunding Case Enabled", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Monthly Intrest and yearly Compounding Case Enabled", Toast.LENGTH_SHORT).show()
                 timePeriod.setHint("Time Period (In Months)")
                 timePeriod.setTextSize(17f)
             }

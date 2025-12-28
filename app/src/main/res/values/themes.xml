@@ -10,7 +10,7 @@
 
     <style name="Theme.app.SplashScreen" parent="Theme.SplashScreen">
 
-        <item name="android:windowSplashScreenBackground">@color/silverSand</item>
+        <item name="android:windowSplashScreenBackground">@color/greyish</item>
         <item name="android:windowSplashScreenAnimatedIcon">@id/icon</item>
         <item name="postSplashScreenTheme">@style/Base.Theme.IntrestCalculator</item>
 
