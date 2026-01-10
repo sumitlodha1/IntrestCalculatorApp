@@ -35,13 +35,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         actionBar?.hide()
-        Thread.sleep(1000)
-        installSplashScreen()
-
 
         setContentView(R.layout.activity_main)
 
